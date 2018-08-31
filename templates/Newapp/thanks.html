@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<link rel="shortcut icon" href="{% static 'Kritagya.png' %}">
+	<title>Kritagya</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="{% static 'css/base.css' %}">
+   <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+   <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+   <!-- script
+   ================================================== -->
+	<script src="{% static 'js/modernizr.js' %}"></script>
+	<script src="{% static 'js/pace.min.js' %}"></script>
+</head>
+<style>
+    .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    width:100%
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+<body style="    font-family: "librebaskerville-regular", serif;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #ffffff;">
+<div class="container">
+  <img src="{% static 'images/faculty.jpg' %}" alt="Snow" style="width:100%;">
+  <div class="centered" style="margin-top:100px">
+      <font color="#ffffff" size="100px">Thanks for Registering</font>
+  </div>
+    <div class="centered" style="margin-top:150px">
+      <font><a href="{% url 'base' %}" style="color:#ffffff"> Go to Home</a></font>
+  </div>
+</div>
+</body>
+
+</html>
